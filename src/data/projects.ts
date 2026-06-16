@@ -39,6 +39,7 @@ export const categories: Category[] = [
         description: 'Multi-agent AI framework enabling autonomous task execution, tool use, and complex reasoning chains. Featured on profile.',
         tech: ['Python', 'LangChain', 'OpenAI', 'Multi-Agent'],
         github: 'https://github.com/JSR2406/AGENTIC-AI-',
+        live: 'https://autonomous-agent-api.vercel.app',
         stars: 1,
         featured: true,
       },
@@ -64,6 +65,7 @@ export const categories: Category[] = [
         description: 'Interactive Streamlit dashboard for financial fraud detection with real-time analytics, model explainability, and visual reporting.',
         tech: ['Python', 'Streamlit', 'Scikit-learn', 'Plotly'],
         github: 'https://github.com/JSR2406/Fraud-Detection-Dashboard-',
+        live: 'https://mini-project-ai-backend.vercel.app',
       },
       {
         id: 'customer-service-agent',
@@ -78,6 +80,7 @@ export const categories: Category[] = [
         description: 'AI-driven market research agent that autonomously gathers, analyzes, and synthesizes competitive intelligence.',
         tech: ['TypeScript', 'AI Agents', 'Web Scraping', 'Next.js'],
         github: 'https://github.com/JSR2406/Market-Research-Agent-',
+        live: 'https://webai-portal.vercel.app',
       },
       {
         id: 'ai-receipt',
@@ -85,6 +88,7 @@ export const categories: Category[] = [
         description: 'Intelligent receipt scanner and expense tracker using OCR and AI to auto-categorize and summarize spending.',
         tech: ['TypeScript', 'React', 'OCR', 'AI'],
         github: 'https://github.com/JSR2406/AI-Receipt-Assistant-',
+        live: 'https://ai-receipt-assistant.vercel.app',
       },
       {
         id: 'ai-chatbot',
@@ -99,6 +103,7 @@ export const categories: Category[] = [
         description: 'AI stock prediction dashboard built with FastAPI and React, featuring real-time forecasting and portfolio analytics.',
         tech: ['Python', 'FastAPI', 'React', 'ML', 'Plotly'],
         github: 'https://github.com/JSR2406/stock-prediction-dashboard',
+        live: 'https://stock-prediction-dashboard-iota.vercel.app',
       },
       {
         id: 'gcc-wealth',
@@ -106,6 +111,7 @@ export const categories: Category[] = [
         description: 'AI-powered wealth management and investment analysis platform for GCC markets with portfolio optimization.',
         tech: ['Python', 'FastAPI', 'ML', 'Finance'],
         github: 'https://github.com/JSR2406/GCC-WEALTH-INVESTMENT-PLATFORM-',
+        live: 'https://wealth-platform-user-app.vercel.app',
       },
       {
         id: 'sales-agent',
@@ -120,6 +126,7 @@ export const categories: Category[] = [
         description: 'Voice-first AI agent that translates and interprets animal vocalizations using audio ML models.',
         tech: ['Python', 'Audio ML', 'Speech Recognition', 'AI'],
         github: 'https://github.com/JSR2406/zoolingo-',
+        live: 'https://zoolingo.vercel.app',
       },
       {
         id: 'health-predictor',
@@ -127,6 +134,7 @@ export const categories: Category[] = [
         description: 'AI-powered health risk prediction platform analyzing patient data to provide early warning indicators and recommendations.',
         tech: ['TypeScript', 'React', 'Python', 'ML', 'Healthcare'],
         github: 'https://github.com/JSR2406/Healthpredictor-AI-',
+        live: 'https://personal-portfolio-website-one-pi.vercel.app',
       },
       {
         id: 'voice-assistant',
@@ -141,6 +149,7 @@ export const categories: Category[] = [
         description: 'ML-based fake news detection system using NLP and ensemble classifiers to identify misinformation.',
         tech: ['JavaScript', 'Python', 'NLP', 'ML'],
         github: 'https://github.com/JSR2406/MINI-PROJECT-FAKE-NEWS-DETECTOR-',
+        live: 'https://mini-project-fake-news-detector.vercel.app',
       },
       {
         id: 'epispy',
@@ -148,6 +157,7 @@ export const categories: Category[] = [
         description: 'Functional epidemic spread models (SIR, SEIR) for disease simulation and public health analysis.',
         tech: ['Python', 'NumPy', 'Matplotlib', 'Epidemiology'],
         github: 'https://github.com/JSR2406/EPISPY-FUNCTIONAL-MODELS',
+        live: 'https://epispy-demo.vercel.app',
       },
       {
         id: 'studenthub',
@@ -155,6 +165,7 @@ export const categories: Category[] = [
         description: 'Student performance analytics platform with predictive modeling and personalized intervention recommendations.',
         tech: ['Python', 'Data Analysis', 'ML', 'Dashboard'],
         github: 'https://github.com/JSR2406/studenthub-performance',
+        live: 'https://study-distill-invicis-projects.vercel.app',
       },
       {
         id: 'broker-copilot',
@@ -162,6 +173,7 @@ export const categories: Category[] = [
         description: 'AI copilot for financial brokers, providing real-time market insights and trade recommendations.',
         tech: ['Python', 'AI', 'Finance', 'LLM'],
         github: 'https://github.com/JSR2406/BROKER-COPILOT-CHALLENGE-',
+        live: 'https://broker-copilot-challenge.vercel.app',
       },
       {
         id: 'autodev',
@@ -169,6 +181,7 @@ export const categories: Category[] = [
         description: 'Automated code generation and review system leveraging LLMs for developer productivity.',
         tech: ['Python', 'LLM', 'Code Generation', 'AI'],
         github: 'https://github.com/JSR2406/AUTODEV-CHALLENGE-',
+        live: 'https://applytrack-ats.vercel.app',
       },
     ],
   },
@@ -194,6 +207,7 @@ export const categories: Category[] = [
         description: 'Full-featured e-commerce platform with product catalog, cart management, payment integration, and order tracking.',
         tech: ['TypeScript', 'Next.js', 'Stripe', 'PostgreSQL'],
         github: 'https://github.com/JSR2406/E-commerce-store-',
+        live: 'https://ecommerce-store-invicis-projects.vercel.app',
       },
       {
         id: 'roomfinder',
@@ -217,6 +231,7 @@ export const categories: Category[] = [
         description: 'Healthcare appointment booking platform with doctor profiles, scheduling, reminders, and patient records.',
         tech: ['TypeScript', 'React', 'Node.js', 'MySQL'],
         github: 'https://github.com/JSR2406/DOCTOR-CLINIC-APPOINTMENT-WEBSITE-',
+        live: 'https://clinic-pwa-ten.vercel.app',
       },
       {
         id: 'task-dashboard',
@@ -224,6 +239,7 @@ export const categories: Category[] = [
         description: 'Kanban-style task manager with team collaboration, deadline tracking, priority management, and progress analytics.',
         tech: ['TypeScript', 'React', 'DnD', 'Firebase'],
         github: 'https://github.com/JSR2406/Task-management-dashboard-',
+        live: 'https://task-management-dashboard-gilt-two.vercel.app',
       },
       {
         id: 'campus-cleanliness',
@@ -231,6 +247,7 @@ export const categories: Category[] = [
         description: 'Real-time campus cleanliness reporting and monitoring system with QR-based reporting and admin dashboards.',
         tech: ['TypeScript', 'React', 'Node.js', 'IoT'],
         github: 'https://github.com/JSR2406/Smart-Campus-Cleanliness-Reporting-and-Monitoring-System-',
+        live: 'https://campus-clean-system-demo.vercel.app',
       },
       {
         id: 'telemedicine',
@@ -238,6 +255,7 @@ export const categories: Category[] = [
         description: 'Smart India Hackathon project — comprehensive telemedicine platform with video consultations and EHR management.',
         tech: ['TypeScript', 'WebRTC', 'React', 'Healthcare'],
         github: 'https://github.com/JSR2406/Telemedicine-health-care-system-SIH-',
+        live: 'https://eco-sync-mvp.vercel.app',
         featured: true,
       },
       {
@@ -246,6 +264,7 @@ export const categories: Category[] = [
         description: 'Environmental impact tracker that visualizes carbon emissions, sets reduction goals, and suggests eco-friendly alternatives.',
         tech: ['JavaScript', 'React', 'Charts.js', 'API'],
         github: 'https://github.com/JSR2406/Carbon-footprint-dashboard-',
+        live: 'https://dy-patil-carbon-dashboard.vercel.app',
       },
       {
         id: 'exam-seating',
@@ -253,6 +272,7 @@ export const categories: Category[] = [
         description: 'AI chatbot that automates exam hall seating arrangement generation and answers student queries about seating.',
         tech: ['TypeScript', 'Chatbot', 'AI', 'React'],
         github: 'https://github.com/JSR2406/EXAM-SEATING-ARRANGEMENT-CHATBOT',
+        live: 'https://exam-seating-chatbot.vercel.app',
       },
       {
         id: 'student-query',
@@ -267,6 +287,7 @@ export const categories: Category[] = [
         description: 'Elegant productivity app with task categorization, priority levels, deadlines, and progress tracking.',
         tech: ['HTML', 'CSS', 'JavaScript'],
         github: 'https://github.com/JSR2406/To-do-list-application-',
+        live: 'https://to-do-list-application-rho-mocha.vercel.app',
       },
     ],
   },
@@ -282,6 +303,7 @@ export const categories: Category[] = [
         description: 'Immersive 3D boutique coffee shop web experience with Three.js rendering, interactive product exploration, and ambient animations.',
         tech: ['JavaScript', 'Three.js', 'WebGL', '3D'],
         github: 'https://github.com/JSR2406/3D-Interactive-Coffee-Shop',
+        live: 'https://noir-and-brew-3d.vercel.app',
         featured: true,
       },
       {
@@ -331,6 +353,7 @@ export const categories: Category[] = [
         description: 'Updated 2025 edition of the SAMBHAV hackathon submission with enhanced features and expanded scope.',
         tech: ['Hackathon', 'Social Impact'],
         github: 'https://github.com/JSR2406/SAMBHAV3-2025',
+        live: 'https://sambhav3-0-techfest-2025-invicis-projects.vercel.app',
       },
       {
         id: 'gdg-hackathon',
@@ -338,6 +361,7 @@ export const categories: Category[] = [
         description: 'Google Developer Groups hackathon submission featuring an AI-powered solution for community challenges.',
         tech: ['Python', 'Google AI', 'Hackathon'],
         github: 'https://github.com/JSR2406/GDG-Hackathon-',
+        live: 'https://finsight-v2-lime.vercel.app',
       },
     ],
   },
