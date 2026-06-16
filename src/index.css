@@ -441,6 +441,7 @@ body::before {
   background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(139,92,246,0.08), transparent 70%);
   opacity: 0;
   transition: opacity 0.3s;
+  pointer-events: none;
 }
 .project-card:hover { border-color: var(--border-hover); background: var(--bg-card-hover); transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.4); }
 .project-card:hover::before { opacity: 1; }
@@ -458,6 +459,7 @@ body::before {
   border: 1px solid rgba(245,158,11,0.3);
   padding: 3px 10px;
   border-radius: 999px;
+  pointer-events: none;
 }
 .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
 .card-icon {
@@ -469,7 +471,7 @@ body::before {
   border: 1px solid var(--border);
   flex-shrink: 0;
 }
-.card-links { display: flex; gap: 6px; align-items: center; }
+.card-links { display: flex; gap: 6px; align-items: center; position: relative; z-index: 2; }
 .card-link {
   height: 30px;
   padding: 0 10px;
@@ -484,11 +486,13 @@ body::before {
   font-weight: 500;
   cursor: pointer;
   white-space: nowrap;
+  position: relative;
+  z-index: 2;
 }
 .card-link-label { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.02em; }
 .card-link:hover { border-color: var(--accent-violet); color: var(--accent-violet); background: rgba(139,92,246,0.1); }
-.card-link-live { border-color: rgba(6,182,212,0.25) !important; color: var(--accent-cyan) !important; background: rgba(6,182,212,0.06) !important; cursor: pointer; }
-.card-link-live:hover { border-color: var(--accent-cyan) !important; background: rgba(6,182,212,0.15) !important; box-shadow: 0 0 12px rgba(6,182,212,0.25); }
+.card-link-live { border-color: rgba(6,182,212,0.35) !important; color: var(--accent-cyan) !important; background: rgba(6,182,212,0.08) !important; cursor: pointer; }
+.card-link-live:hover { border-color: var(--accent-cyan) !important; background: rgba(6,182,212,0.18) !important; box-shadow: 0 0 14px rgba(6,182,212,0.3); color: #fff !important; }
 .live-badge {
   display: inline-flex;
   align-items: center;
