@@ -19,66 +19,66 @@ const CATEGORY_ICONS: Record<string, string> = {
 const PRICING_TIERS = [
   {
     id: 'starter',
-    name: 'Starter',
+    name: 'Basic Website',
     emoji: '🚀',
-    price: '₹8,000 – ₹18,000',
-    usd: '$100–$220',
+    price: '₹2,000 – ₹5,000',
+    usd: '$24–$60',
     idealFor: 'Individuals, students & small businesses',
-    timeline: '3–7 days',
+    timeline: '3–5 days',
     revisions: '1–2 revisions',
     support: '3 days post-delivery',
     color: 'from-cyan-500 to-blue-500',
     accent: '#06b6d4',
     highlights: [
-      'Landing page or portfolio (up to 5 pages)',
-      'Responsive & mobile-first design',
-      'Basic animations & hover effects',
+      'Responsive UI design & layout',
+      'Landing page or portfolio sections',
+      'Project showcase & about sections',
       'Contact form integration',
-      'SEO meta tags & sitemap',
-      'Deployed on Vercel / Netlify',
+      'Mobile optimization & smooth animations',
+      'Deployment + source code handover',
     ],
   },
   {
     id: 'pro',
-    name: 'Professional',
+    name: 'Medium Website',
     emoji: '⚡',
-    price: '₹25,000 – ₹60,000',
-    usd: '$300–$720',
+    price: '₹8,000 – ₹10,000',
+    usd: '$96–$120',
     idealFor: 'Startups, agencies & growing businesses',
-    timeline: '2–3 weeks',
+    timeline: '1–2 weeks',
     revisions: '3 revisions',
     support: '7 days post-delivery',
     color: 'from-violet-500 to-purple-600',
     accent: '#8b5cf6',
     popular: true,
     highlights: [
-      'Full-stack web app (up to 15 pages)',
-      'Auth, database & REST/GraphQL API',
-      'Admin dashboard & role-based access',
-      'Payment gateway (Razorpay/Stripe)',
-      'Dark mode & glassmorphism UI',
-      'Lighthouse 90+ performance score',
+      'Custom frontend + backend integration',
+      'Database setup & authentication',
+      'Dynamic forms & user dashboard or CMS',
+      'SEO setup & performance optimization',
+      'Deployment on Vercel / cloud',
+      'Post-delivery support included',
     ],
   },
   {
     id: 'enterprise',
-    name: 'Enterprise',
+    name: 'Full-Stack + AI',
     emoji: '🏆',
-    price: '₹80,000 – ₹2,00,000+',
-    usd: '$960–$2,400+',
-    idealFor: 'Funded startups, enterprises & SaaS',
-    timeline: '4–8 weeks',
+    price: '₹10,000 – ₹15,000',
+    usd: '$120–$180',
+    idealFor: 'Product companies & AI-driven startups',
+    timeline: '2–4 weeks',
     revisions: 'Unlimited',
-    support: '30 days post-delivery',
+    support: 'As per package terms',
     color: 'from-amber-500 to-orange-500',
     accent: '#f59e0b',
     highlights: [
-      'AI-powered SaaS or enterprise app',
-      'LLM/RAG chatbot & recommendation engine',
-      'Multi-tenant architecture & RBAC',
-      'Real-time features (WebSockets/WebRTC)',
-      'CI/CD, Docker, cloud deployment',
-      'Full documentation & source handover',
+      'Complete product architecture & premium UI/UX',
+      'Full frontend + backend development',
+      'Database, admin panel & AI chatbot / LLM',
+      'Payment gateway integration',
+      'Testing, deployment & technical handover',
+      'Full source code + documentation',
     ],
   },
 ];
@@ -159,20 +159,16 @@ const FEATURE_MATRIX = [
 ];
 
 const ADDONS = [
-  { name: 'AI Chatbot Integration', price: '₹8,000+', icon: '🤖' },
-  { name: 'SEO Full Audit & Optimization', price: '₹5,000', icon: '📊' },
-  { name: 'Payment Gateway Setup', price: '₹4,000', icon: '💳' },
-  { name: 'WhatsApp / Telegram Bot', price: '₹6,000+', icon: '📱' },
-  { name: 'Extra Page Design', price: '₹1,500/page', icon: '📄' },
-  { name: 'Extra Revision Round', price: '₹800/round', icon: '🔄' },
-  { name: 'Rush Delivery (48–72 hrs)', price: '50% surcharge', icon: '⚡' },
-  { name: 'Monthly Maintenance', price: '₹3,000/mo', icon: '🛠️' },
-  { name: 'Blog / CMS Setup', price: '₹4,500', icon: '✍️' },
-  { name: 'Figma Design File', price: '₹3,500', icon: '🎨' },
-  { name: 'Docker & Cloud Deployment', price: '₹5,000', icon: '☁️' },
-  { name: 'Unit + Integration Testing', price: '₹4,000', icon: '🧪' },
-  { name: 'Multi-language (i18n)', price: '₹3,000', icon: '🌍' },
-  { name: 'Admin Dashboard', price: '₹7,000+', icon: '📋' },
+  { name: 'Logo Design & Branding Kit', price: '₹1,000 – ₹2,500', icon: '🎨' },
+  { name: 'Payment Gateway Integration', price: '₹1,500 – ₹2,000', icon: '💳' },
+  { name: 'AI Chatbot Integration', price: '₹2,000 – ₹4,000', icon: '🤖' },
+  { name: 'WhatsApp / Telegram Integration', price: '₹1,500 – ₹2,500', icon: '📱' },
+  { name: 'Blog / CMS System', price: '₹1,000 – ₹2,000', icon: '✍️' },
+  { name: 'SEO Optimization', price: '₹1,000 – ₹2,000', icon: '📊' },
+  { name: 'Analytics Dashboard', price: '₹2,500 – ₹5,000', icon: '📈' },
+  { name: 'Monthly Maintenance', price: '₹500 – ₹1,500/mo', icon: '🛠️' },
+  { name: 'Rush Delivery', price: 'Extra cost applies', icon: '⚡' },
+  { name: 'Extra Revision Round', price: 'Chargeable per round', icon: '🔄' },
 ];
 
 const SKILLS = [
@@ -661,9 +657,9 @@ export default function App() {
             <div className="section-label" style={{ marginBottom: 24 }}>What's Included</div>
             <div className="matrix-header">
               <div className="matrix-feature-col">Feature</div>
-              <div className="matrix-tier-col tier-starter">🚀 Starter</div>
-              <div className="matrix-tier-col tier-pro">⚡ Pro</div>
-              <div className="matrix-tier-col tier-enterprise">🏆 Enterprise</div>
+              <div className="matrix-tier-col tier-starter">🚀 Basic</div>
+              <div className="matrix-tier-col tier-pro">⚡ Medium</div>
+              <div className="matrix-tier-col tier-enterprise">🏆 Full-Stack+AI</div>
             </div>
             {FEATURE_MATRIX.map(group => (
               <div key={group.category} className="matrix-group">
@@ -699,20 +695,43 @@ export default function App() {
           <div className="milestones-wrap">
             <div className="milestone-item">
               <div className="milestone-num">50%</div>
-              <div className="milestone-label">Upfront</div>
-              <div className="milestone-desc">Project kickoff &amp; design phase</div>
+              <div className="milestone-label">Advance</div>
+              <div className="milestone-desc">Paid before project starts</div>
             </div>
             <div className="milestone-arrow">→</div>
             <div className="milestone-item">
               <div className="milestone-num">25%</div>
-              <div className="milestone-label">Mid-delivery</div>
-              <div className="milestone-desc">Staging review &amp; revisions</div>
+              <div className="milestone-label">Mid-milestone</div>
+              <div className="milestone-desc">After design / first milestone approval</div>
             </div>
             <div className="milestone-arrow">→</div>
             <div className="milestone-item">
               <div className="milestone-num">25%</div>
               <div className="milestone-label">Final handover</div>
-              <div className="milestone-desc">Live deployment &amp; source code</div>
+              <div className="milestone-desc">Before deployment & source code release</div>
+            </div>
+          </div>
+
+          {/* TERMS & CONDITIONS */}
+          <div style={{ marginTop: 48, background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: 16, padding: '32px 36px', maxWidth: 860, margin: '48px auto 0' }}>
+            <div className="section-label" style={{ marginBottom: 16 }}>Terms & Conditions</div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '12px 32px' }}>
+              {[
+                '📋 Scope changes after approval are charged separately',
+                '📁 Client must provide logo, content & references before dev starts',
+                '⏳ Delays in content submission may extend the timeline',
+                '🌐 Domain, hosting & API costs billed separately unless specified',
+                '🛡 Support period depends on selected package',
+                '⚡ Rush delivery available at extra cost',
+                '🔒 All business information stays strictly confidential',
+                '💳 Extra revisions beyond included rounds are chargeable',
+                '📦 Source code handed over only after full payment',
+                '📅 Quote validity: 30 days from date of issue',
+              ].map(term => (
+                <div key={term} style={{ display: 'flex', gap: 8, fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
+                  <span>{term}</span>
+                </div>
+              ))}
             </div>
           </div>
 
