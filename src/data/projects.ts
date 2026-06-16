@@ -1,0 +1,347 @@
+export interface Project {
+  id: string;
+  title: string;
+  description: string;
+  tech: string[];
+  github: string;
+  live?: string;
+  stars?: number;
+  featured?: boolean;
+}
+
+export interface Category {
+  id: string;
+  label: string;
+  icon: string;
+  color: string;
+  projects: Project[];
+}
+
+export const categories: Category[] = [
+  {
+    id: 'ai-ml',
+    label: 'AI & Machine Learning',
+    icon: '🤖',
+    color: 'from-violet-500 to-purple-600',
+    projects: [
+      {
+        id: 'meetflow',
+        title: 'MeetFlow – AI Meeting Intelligence',
+        description: 'AI-powered interactive meeting platform with real-time transcription, action-item extraction, Kanban planning, and Jitsi video conferencing integration.',
+        tech: ['TypeScript', 'Next.js', 'Supabase', 'OpenRouter AI', 'Jitsi'],
+        github: 'https://github.com/JSR2406/MeetFlow-AI-Powered-Interactive-Meeting-Intelligence-Platform',
+        live: 'https://meetflow-copilot-jsr2406.vercel.app',
+        featured: true,
+      },
+      {
+        id: 'agentic-ai',
+        title: 'Agentic AI Framework',
+        description: 'Multi-agent AI framework enabling autonomous task execution, tool use, and complex reasoning chains. Featured on profile.',
+        tech: ['Python', 'LangChain', 'OpenAI', 'Multi-Agent'],
+        github: 'https://github.com/JSR2406/AGENTIC-AI-',
+        stars: 1,
+        featured: true,
+      },
+      {
+        id: 'mcp-server',
+        title: 'MCP Server',
+        description: 'Model Context Protocol server implementation enabling seamless AI model integrations and context management.',
+        tech: ['Python', 'MCP', 'FastAPI'],
+        github: 'https://github.com/JSR2406/MCP-server-',
+        stars: 1,
+        featured: true,
+      },
+      {
+        id: 'traffic-prediction',
+        title: 'Traffic Demand Prediction',
+        description: 'ML pipeline with LightGBM, XGBoost, and CatBoost ensemble for traffic demand forecasting. Advanced feature engineering with geohash decoding and temporal cyclicity.',
+        tech: ['Python', 'LightGBM', 'XGBoost', 'CatBoost', 'Pandas'],
+        github: 'https://github.com/JSR2406/TRAFFIC-DEMAND-PREDICTION',
+      },
+      {
+        id: 'fraud-detection',
+        title: 'Fraud Detection Dashboard',
+        description: 'Interactive Streamlit dashboard for financial fraud detection with real-time analytics, model explainability, and visual reporting.',
+        tech: ['Python', 'Streamlit', 'Scikit-learn', 'Plotly'],
+        github: 'https://github.com/JSR2406/Fraud-Detection-Dashboard-',
+      },
+      {
+        id: 'customer-service-agent',
+        title: 'Customer Service AI Agent',
+        description: 'Autonomous customer service agent with NLP understanding, ticket routing, and resolution workflows.',
+        tech: ['Python', 'LangChain', 'OpenAI', 'FastAPI'],
+        github: 'https://github.com/JSR2406/Customer-Service-Agent-',
+      },
+      {
+        id: 'market-research-agent',
+        title: 'Market Research Agent',
+        description: 'AI-driven market research agent that autonomously gathers, analyzes, and synthesizes competitive intelligence.',
+        tech: ['TypeScript', 'AI Agents', 'Web Scraping', 'Next.js'],
+        github: 'https://github.com/JSR2406/Market-Research-Agent-',
+      },
+      {
+        id: 'ai-receipt',
+        title: 'AI Receipt Assistant',
+        description: 'Intelligent receipt scanner and expense tracker using OCR and AI to auto-categorize and summarize spending.',
+        tech: ['TypeScript', 'React', 'OCR', 'AI'],
+        github: 'https://github.com/JSR2406/AI-Receipt-Assistant-',
+      },
+      {
+        id: 'ai-chatbot',
+        title: 'AI Chatbot',
+        description: 'Feature-rich AI chatbot with multi-turn conversations, context retention, and customizable personas.',
+        tech: ['TypeScript', 'React', 'OpenAI', 'Node.js'],
+        github: 'https://github.com/JSR2406/AI-CHATBOT-',
+      },
+      {
+        id: 'stock-prediction',
+        title: 'Stock Prediction Dashboard',
+        description: 'AI stock prediction dashboard built with FastAPI and React, featuring real-time forecasting and portfolio analytics.',
+        tech: ['Python', 'FastAPI', 'React', 'ML', 'Plotly'],
+        github: 'https://github.com/JSR2406/stock-prediction-dashboard',
+      },
+      {
+        id: 'gcc-wealth',
+        title: 'GCC Wealth Investment Platform',
+        description: 'AI-powered wealth management and investment analysis platform for GCC markets with portfolio optimization.',
+        tech: ['Python', 'FastAPI', 'ML', 'Finance'],
+        github: 'https://github.com/JSR2406/GCC-WEALTH-INVESTMENT-PLATFORM-',
+      },
+      {
+        id: 'sales-agent',
+        title: 'Sales Generation AI Agent',
+        description: 'Autonomous sales agent that generates leads, crafts personalized outreach, and manages pipeline using AI.',
+        tech: ['Python', 'AI Agents', 'LangChain', 'CRM'],
+        github: 'https://github.com/JSR2406/SALES-GENERATION-AI-AGENT-',
+      },
+      {
+        id: 'zoolingo',
+        title: 'Zoolingo – Animal Voice AI',
+        description: 'Voice-first AI agent that translates and interprets animal vocalizations using audio ML models.',
+        tech: ['Python', 'Audio ML', 'Speech Recognition', 'AI'],
+        github: 'https://github.com/JSR2406/zoolingo-',
+      },
+      {
+        id: 'health-predictor',
+        title: 'HealthPredictor AI',
+        description: 'AI-powered health risk prediction platform analyzing patient data to provide early warning indicators and recommendations.',
+        tech: ['TypeScript', 'React', 'Python', 'ML', 'Healthcare'],
+        github: 'https://github.com/JSR2406/Healthpredictor-AI-',
+      },
+      {
+        id: 'voice-assistant',
+        title: 'Voice-Based Personal Assistant',
+        description: 'Intelligent voice assistant with NLP, task automation, calendar integration, and smart home controls.',
+        tech: ['Python', 'Speech Recognition', 'NLP', 'TTS'],
+        github: 'https://github.com/JSR2406/Voice-based-personal-assistant',
+      },
+      {
+        id: 'fake-news',
+        title: 'Fake News Detector',
+        description: 'ML-based fake news detection system using NLP and ensemble classifiers to identify misinformation.',
+        tech: ['JavaScript', 'Python', 'NLP', 'ML'],
+        github: 'https://github.com/JSR2406/MINI-PROJECT-FAKE-NEWS-DETECTOR-',
+      },
+      {
+        id: 'epispy',
+        title: 'EPISPY – Epidemic Models',
+        description: 'Functional epidemic spread models (SIR, SEIR) for disease simulation and public health analysis.',
+        tech: ['Python', 'NumPy', 'Matplotlib', 'Epidemiology'],
+        github: 'https://github.com/JSR2406/EPISPY-FUNCTIONAL-MODELS',
+      },
+      {
+        id: 'studenthub',
+        title: 'StudentHub Performance Analytics',
+        description: 'Student performance analytics platform with predictive modeling and personalized intervention recommendations.',
+        tech: ['Python', 'Data Analysis', 'ML', 'Dashboard'],
+        github: 'https://github.com/JSR2406/studenthub-performance',
+      },
+      {
+        id: 'broker-copilot',
+        title: 'Broker Copilot Challenge',
+        description: 'AI copilot for financial brokers, providing real-time market insights and trade recommendations.',
+        tech: ['Python', 'AI', 'Finance', 'LLM'],
+        github: 'https://github.com/JSR2406/BROKER-COPILOT-CHALLENGE-',
+      },
+      {
+        id: 'autodev',
+        title: 'AutoDev Challenge',
+        description: 'Automated code generation and review system leveraging LLMs for developer productivity.',
+        tech: ['Python', 'LLM', 'Code Generation', 'AI'],
+        github: 'https://github.com/JSR2406/AUTODEV-CHALLENGE-',
+      },
+    ],
+  },
+  {
+    id: 'web-apps',
+    label: 'Web Applications',
+    icon: '🌐',
+    color: 'from-cyan-500 to-blue-600',
+    projects: [
+      {
+        id: 'skills-bridge',
+        title: 'Skills Bridge',
+        description: 'Platform bridging the gap between academic learning and industry skills with curated learning paths and peer mentoring.',
+        tech: ['TypeScript', 'React', 'Node.js', 'MongoDB'],
+        github: 'https://github.com/JSR2406/Skills-Bridge-',
+        live: 'https://skillsbridge-jet.vercel.app',
+        stars: 1,
+        featured: true,
+      },
+      {
+        id: 'ecommerce',
+        title: 'E-Commerce Store',
+        description: 'Full-featured e-commerce platform with product catalog, cart management, payment integration, and order tracking.',
+        tech: ['TypeScript', 'Next.js', 'Stripe', 'PostgreSQL'],
+        github: 'https://github.com/JSR2406/E-commerce-store-',
+      },
+      {
+        id: 'roomfinder',
+        title: 'RoomFinder Website',
+        description: 'Smart room and accommodation finder with map-based search, filters, and real-time availability.',
+        tech: ['TypeScript', 'React', 'Maps API', 'Node.js'],
+        github: 'https://github.com/JSR2406/Roomfinder-Website',
+        live: 'https://roomfinder-website.vercel.app',
+      },
+      {
+        id: 'projecthub',
+        title: 'ProjectHub – Client Service Platform',
+        description: 'Freelance project management platform connecting clients with service providers, featuring milestone tracking and payments.',
+        tech: ['TypeScript', 'Next.js', 'Prisma', 'PostgreSQL'],
+        github: 'https://github.com/JSR2406/PROJECTHUB-CLIENT-SERVICE-PLATFORM-',
+        live: 'https://projecthub-steel.vercel.app',
+      },
+      {
+        id: 'doctor-clinic',
+        title: 'Doctor Clinic Appointment System',
+        description: 'Healthcare appointment booking platform with doctor profiles, scheduling, reminders, and patient records.',
+        tech: ['TypeScript', 'React', 'Node.js', 'MySQL'],
+        github: 'https://github.com/JSR2406/DOCTOR-CLINIC-APPOINTMENT-WEBSITE-',
+      },
+      {
+        id: 'task-dashboard',
+        title: 'Task Management Dashboard',
+        description: 'Kanban-style task manager with team collaboration, deadline tracking, priority management, and progress analytics.',
+        tech: ['TypeScript', 'React', 'DnD', 'Firebase'],
+        github: 'https://github.com/JSR2406/Task-management-dashboard-',
+      },
+      {
+        id: 'campus-cleanliness',
+        title: 'Smart Campus Cleanliness System',
+        description: 'Real-time campus cleanliness reporting and monitoring system with QR-based reporting and admin dashboards.',
+        tech: ['TypeScript', 'React', 'Node.js', 'IoT'],
+        github: 'https://github.com/JSR2406/Smart-Campus-Cleanliness-Reporting-and-Monitoring-System-',
+      },
+      {
+        id: 'telemedicine',
+        title: 'Telemedicine Healthcare System (SIH)',
+        description: 'Smart India Hackathon project — comprehensive telemedicine platform with video consultations and EHR management.',
+        tech: ['TypeScript', 'WebRTC', 'React', 'Healthcare'],
+        github: 'https://github.com/JSR2406/Telemedicine-health-care-system-SIH-',
+        featured: true,
+      },
+      {
+        id: 'carbon-footprint',
+        title: 'Carbon Footprint Dashboard',
+        description: 'Environmental impact tracker that visualizes carbon emissions, sets reduction goals, and suggests eco-friendly alternatives.',
+        tech: ['JavaScript', 'React', 'Charts.js', 'API'],
+        github: 'https://github.com/JSR2406/Carbon-footprint-dashboard-',
+      },
+      {
+        id: 'exam-seating',
+        title: 'Exam Seating Arrangement Chatbot',
+        description: 'AI chatbot that automates exam hall seating arrangement generation and answers student queries about seating.',
+        tech: ['TypeScript', 'Chatbot', 'AI', 'React'],
+        github: 'https://github.com/JSR2406/EXAM-SEATING-ARRANGEMENT-CHATBOT',
+      },
+      {
+        id: 'student-query',
+        title: 'Student Query Chatbot',
+        description: 'Intelligent chatbot for handling student academic queries, FAQ resolution, and course guidance.',
+        tech: ['Chatbot', 'NLP', 'AI'],
+        github: 'https://github.com/JSR2406/Student-Query-Chatbot-',
+      },
+      {
+        id: 'todo',
+        title: 'To-Do List Application',
+        description: 'Elegant productivity app with task categorization, priority levels, deadlines, and progress tracking.',
+        tech: ['HTML', 'CSS', 'JavaScript'],
+        github: 'https://github.com/JSR2406/To-do-list-application-',
+      },
+    ],
+  },
+  {
+    id: 'creative-3d',
+    label: '3D & Creative Web',
+    icon: '✨',
+    color: 'from-orange-500 to-pink-600',
+    projects: [
+      {
+        id: '3d-coffee-shop',
+        title: '3D Interactive Coffee Shop',
+        description: 'Immersive 3D boutique coffee shop web experience with Three.js rendering, interactive product exploration, and ambient animations.',
+        tech: ['JavaScript', 'Three.js', 'WebGL', '3D'],
+        github: 'https://github.com/JSR2406/3D-Interactive-Coffee-Shop',
+        featured: true,
+      },
+      {
+        id: '3d-cafe-website',
+        title: '3D Interactive Café Website',
+        description: 'Smart interactive café website with 3D menu viewing, ordering system, and immersive user experience.',
+        tech: ['TypeScript', 'Three.js', 'React', '3D'],
+        github: 'https://github.com/JSR2406/3D-INTERACTIVE-CAFE-WEBSITE-',
+        live: 'https://brew-and-bean-cafe.vercel.app',
+      },
+      {
+        id: 'lumeire',
+        title: 'Lumeire Restaurant Application',
+        description: 'Premium restaurant web application with elegant UI, interactive menu, reservation system, and online ordering.',
+        tech: ['TypeScript', 'Next.js', 'Prisma', 'UI/UX'],
+        github: 'https://github.com/JSR2406/Lumeire-Restaurant-Application-',
+        live: 'https://lumeire-restaurant-application.vercel.app',
+      },
+      {
+        id: 'polished-cafe',
+        title: 'Polished Café Client Website',
+        description: 'Professionally designed client website for a local café with menu showcase, gallery, and contact integration.',
+        tech: ['TypeScript', 'React', 'CSS', 'Client Project'],
+        github: 'https://github.com/JSR2406/Polished-Cafe-Website-for-Client-',
+        live: 'https://polished-cafe-website-for-client.vercel.app',
+      },
+    ],
+  },
+  {
+    id: 'hackathons',
+    label: 'Hackathons & Competitions',
+    icon: '🏆',
+    color: 'from-amber-500 to-yellow-500',
+    projects: [
+      {
+        id: 'sambhav30',
+        title: 'SAMBHAV 3.0',
+        description: 'Hackathon project built for SAMBHAV 3.0 — a social impact platform addressing rural connectivity and digital literacy.',
+        tech: ['JavaScript', 'React', 'Node.js', 'Hackathon'],
+        github: 'https://github.com/JSR2406/SAMBHAV3.0',
+        live: 'https://sambhav-3-0-kappa.vercel.app',
+        featured: true,
+      },
+      {
+        id: 'sambhav-2025',
+        title: 'SAMBHAV 3.0 – 2025',
+        description: 'Updated 2025 edition of the SAMBHAV hackathon submission with enhanced features and expanded scope.',
+        tech: ['Hackathon', 'Social Impact'],
+        github: 'https://github.com/JSR2406/SAMBHAV3-2025',
+      },
+      {
+        id: 'gdg-hackathon',
+        title: 'GDG Hackathon',
+        description: 'Google Developer Groups hackathon submission featuring an AI-powered solution for community challenges.',
+        tech: ['Python', 'Google AI', 'Hackathon'],
+        github: 'https://github.com/JSR2406/GDG-Hackathon-',
+      },
+    ],
+  },
+];
+
+export const allProjects = categories.flatMap(c => c.projects);
+export const featuredProjects = allProjects.filter(p => p.featured);
