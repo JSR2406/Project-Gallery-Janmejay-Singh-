@@ -65,7 +65,6 @@ export const categories: Category[] = [
         description: 'Interactive Streamlit dashboard for financial fraud detection with real-time analytics, model explainability, and visual reporting.',
         tech: ['Python', 'Streamlit', 'Scikit-learn', 'Plotly'],
         github: 'https://github.com/JSR2406/Fraud-Detection-Dashboard-',
-        live: 'https://mini-project-ai-backend.vercel.app',
       },
       {
         id: 'customer-service-agent',
@@ -134,7 +133,6 @@ export const categories: Category[] = [
         description: 'AI-powered health risk prediction platform analyzing patient data to provide early warning indicators and recommendations.',
         tech: ['TypeScript', 'React', 'Python', 'ML', 'Healthcare'],
         github: 'https://github.com/JSR2406/Healthpredictor-AI-',
-        live: 'https://personal-portfolio-website-one-pi.vercel.app',
       },
       {
         id: 'voice-assistant',
@@ -157,7 +155,7 @@ export const categories: Category[] = [
         description: 'Functional epidemic spread models (SIR, SEIR) for disease simulation and public health analysis.',
         tech: ['Python', 'NumPy', 'Matplotlib', 'Epidemiology'],
         github: 'https://github.com/JSR2406/EPISPY-FUNCTIONAL-MODELS',
-        live: 'https://epispy-demo.vercel.app',
+        live: 'https://epispy-demo-7rg8.vercel.app',
       },
       {
         id: 'studenthub',
@@ -165,7 +163,6 @@ export const categories: Category[] = [
         description: 'Student performance analytics platform with predictive modeling and personalized intervention recommendations.',
         tech: ['Python', 'Data Analysis', 'ML', 'Dashboard'],
         github: 'https://github.com/JSR2406/studenthub-performance',
-        live: 'https://study-distill-invicis-projects.vercel.app',
       },
       {
         id: 'broker-copilot',
@@ -173,7 +170,6 @@ export const categories: Category[] = [
         description: 'AI copilot for financial brokers, providing real-time market insights and trade recommendations.',
         tech: ['Python', 'AI', 'Finance', 'LLM'],
         github: 'https://github.com/JSR2406/BROKER-COPILOT-CHALLENGE-',
-        live: 'https://broker-copilot-challenge.vercel.app',
       },
       {
         id: 'autodev',
@@ -181,7 +177,6 @@ export const categories: Category[] = [
         description: 'Automated code generation and review system leveraging LLMs for developer productivity.',
         tech: ['Python', 'LLM', 'Code Generation', 'AI'],
         github: 'https://github.com/JSR2406/AUTODEV-CHALLENGE-',
-        live: 'https://applytrack-ats.vercel.app',
       },
     ],
   },
@@ -255,7 +250,6 @@ export const categories: Category[] = [
         description: 'Smart India Hackathon project — comprehensive telemedicine platform with video consultations and EHR management.',
         tech: ['TypeScript', 'WebRTC', 'React', 'Healthcare'],
         github: 'https://github.com/JSR2406/Telemedicine-health-care-system-SIH-',
-        live: 'https://eco-sync-mvp.vercel.app',
         featured: true,
       },
       {

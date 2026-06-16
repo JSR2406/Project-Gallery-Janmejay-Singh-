@@ -19,66 +19,66 @@ const CATEGORY_ICONS: Record<string, string> = {
 const PRICING_TIERS = [
   {
     id: 'starter',
-    name: 'Basic Website',
+    name: 'Starter',
     emoji: '🚀',
-    price: '₹2,000 – ₹5,000',
-    usd: '$24–$60',
+    price: '₹2,000 – 8,000',
+    usd: '$100–$220',
     idealFor: 'Individuals, students & small businesses',
-    timeline: '3–5 days',
+    timeline: '3–7 days',
     revisions: '1–2 revisions',
     support: '3 days post-delivery',
     color: 'from-cyan-500 to-blue-500',
     accent: '#06b6d4',
     highlights: [
-      'Responsive UI design & layout',
-      'Landing page or portfolio sections',
-      'Project showcase & about sections',
+      'Landing page or portfolio (up to 5 pages)',
+      'Responsive & mobile-first design',
+      'Basic animations & hover effects',
       'Contact form integration',
-      'Mobile optimization & smooth animations',
-      'Deployment + source code handover',
+      'SEO meta tags & sitemap',
+      'Deployed on Vercel / Netlify',
     ],
   },
   {
     id: 'pro',
-    name: 'Medium Website',
+    name: 'Professional',
     emoji: '⚡',
-    price: '₹8,000 – ₹10,000',
-    usd: '$96–$120',
+    price: '₹10,000 – ₹20,000',
+    usd: '$300–$720',
     idealFor: 'Startups, agencies & growing businesses',
-    timeline: '1–2 weeks',
+    timeline: '2–3 weeks',
     revisions: '3 revisions',
     support: '7 days post-delivery',
     color: 'from-violet-500 to-purple-600',
     accent: '#8b5cf6',
     popular: true,
     highlights: [
-      'Custom frontend + backend integration',
-      'Database setup & authentication',
-      'Dynamic forms & user dashboard or CMS',
-      'SEO setup & performance optimization',
-      'Deployment on Vercel / cloud',
-      'Post-delivery support included',
+      'Full-stack web app (up to 15 pages)',
+      'Auth, database & REST/GraphQL API',
+      'Admin dashboard & role-based access',
+      'Payment gateway (Razorpay/Stripe)',
+      'Dark mode & glassmorphism UI',
+      'Lighthouse 90+ performance score',
     ],
   },
   {
     id: 'enterprise',
-    name: 'Full-Stack + AI',
+    name: 'Enterprise',
     emoji: '🏆',
-    price: '₹10,000 – ₹15,000',
-    usd: '$120–$180',
-    idealFor: 'Product companies & AI-driven startups',
-    timeline: '2–4 weeks',
+    price: '₹30,000 – ₹80,000+',
+    usd: '$960–$2,400+',
+    idealFor: 'Funded startups, enterprises & SaaS',
+    timeline: '4–8 weeks',
     revisions: 'Unlimited',
-    support: 'As per package terms',
+    support: '30 days post-delivery',
     color: 'from-amber-500 to-orange-500',
     accent: '#f59e0b',
     highlights: [
-      'Complete product architecture & premium UI/UX',
-      'Full frontend + backend development',
-      'Database, admin panel & AI chatbot / LLM',
-      'Payment gateway integration',
-      'Testing, deployment & technical handover',
-      'Full source code + documentation',
+      'AI-powered SaaS or enterprise app',
+      'LLM/RAG chatbot & recommendation engine',
+      'Multi-tenant architecture & RBAC',
+      'Real-time features (WebSockets/WebRTC)',
+      'CI/CD, Docker, cloud deployment',
+      'Full documentation & source handover',
     ],
   },
 ];
@@ -159,16 +159,20 @@ const FEATURE_MATRIX = [
 ];
 
 const ADDONS = [
-  { name: 'Logo Design & Branding Kit', price: '₹1,000 – ₹2,500', icon: '🎨' },
-  { name: 'Payment Gateway Integration', price: '₹1,500 – ₹2,000', icon: '💳' },
-  { name: 'AI Chatbot Integration', price: '₹2,000 – ₹4,000', icon: '🤖' },
-  { name: 'WhatsApp / Telegram Integration', price: '₹1,500 – ₹2,500', icon: '📱' },
-  { name: 'Blog / CMS System', price: '₹1,000 – ₹2,000', icon: '✍️' },
-  { name: 'SEO Optimization', price: '₹1,000 – ₹2,000', icon: '📊' },
-  { name: 'Analytics Dashboard', price: '₹2,500 – ₹5,000', icon: '📈' },
-  { name: 'Monthly Maintenance', price: '₹500 – ₹1,500/mo', icon: '🛠️' },
-  { name: 'Rush Delivery', price: 'Extra cost applies', icon: '⚡' },
-  { name: 'Extra Revision Round', price: 'Chargeable per round', icon: '🔄' },
+  { name: 'AI Chatbot Integration', price: '₹8,000+', icon: '🤖' },
+  { name: 'SEO Full Audit & Optimization', price: '₹5,000', icon: '📊' },
+  { name: 'Payment Gateway Setup', price: '₹4,000', icon: '💳' },
+  { name: 'WhatsApp / Telegram Bot', price: '₹6,000+', icon: '📱' },
+  { name: 'Extra Page Design', price: '₹1,500/page', icon: '📄' },
+  { name: 'Extra Revision Round', price: '₹800/round', icon: '🔄' },
+  { name: 'Rush Delivery (48–72 hrs)', price: '50% surcharge', icon: '⚡' },
+  { name: 'Monthly Maintenance', price: '₹3,000/mo', icon: '🛠️' },
+  { name: 'Blog / CMS Setup', price: '₹4,500', icon: '✍️' },
+  { name: 'Figma Design File', price: '₹3,500', icon: '🎨' },
+  { name: 'Docker & Cloud Deployment', price: '₹5,000', icon: '☁️' },
+  { name: 'Unit + Integration Testing', price: '₹4,000', icon: '🧪' },
+  { name: 'Multi-language (i18n)', price: '₹3,000', icon: '🌍' },
+  { name: 'Admin Dashboard', price: '₹7,000+', icon: '📋' },
 ];
 
 const SKILLS = [
@@ -183,18 +187,18 @@ const SKILLS = [
 ];
 
 const TECH_TICKER = [
-  'TypeScript','React','Next.js','Python','FastAPI','LangChain',
-  'OpenAI','Supabase','PostgreSQL','Three.js','Node.js','TailwindCSS',
-  'LightGBM','XGBoost','Streamlit','WebRTC','Prisma','Redis',
-  'TypeScript','React','Next.js','Python','FastAPI','LangChain',
-  'OpenAI','Supabase','PostgreSQL','Three.js','Node.js','TailwindCSS',
-  'LightGBM','XGBoost','Streamlit','WebRTC','Prisma','Redis',
+  'TypeScript', 'React', 'Next.js', 'Python', 'FastAPI', 'LangChain',
+  'OpenAI', 'Supabase', 'PostgreSQL', 'Three.js', 'Node.js', 'TailwindCSS',
+  'LightGBM', 'XGBoost', 'Streamlit', 'WebRTC', 'Prisma', 'Redis',
+  'TypeScript', 'React', 'Next.js', 'Python', 'FastAPI', 'LangChain',
+  'OpenAI', 'Supabase', 'PostgreSQL', 'Three.js', 'Node.js', 'TailwindCSS',
+  'LightGBM', 'XGBoost', 'Streamlit', 'WebRTC', 'Prisma', 'Redis',
 ];
 
 function GitHubIcon() {
   return (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
     </svg>
   );
 }
@@ -202,7 +206,7 @@ function GitHubIcon() {
 function ExternalIcon() {
   return (
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+      <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
     </svg>
   );
 }
@@ -210,7 +214,7 @@ function ExternalIcon() {
 function SearchIcon() {
   return (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+      <circle cx="11" cy="11" r="8" /><path d="M21 21l-4.35-4.35" />
     </svg>
   );
 }
@@ -218,7 +222,7 @@ function SearchIcon() {
 function StarIcon() {
   return (
     <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
     </svg>
   );
 }
@@ -226,7 +230,7 @@ function StarIcon() {
 function VercelIcon() {
   return (
     <svg width="12" height="12" viewBox="0 0 76 65" fill="currentColor">
-      <path d="M37.5274 0L75.0548 65H0L37.5274 0Z"/>
+      <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" />
     </svg>
   );
 }
@@ -234,7 +238,7 @@ function VercelIcon() {
 function ArrowUpIcon() {
   return (
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-      <path d="M12 19V5M5 12l7-7 7 7"/>
+      <path d="M12 19V5M5 12l7-7 7 7" />
     </svg>
   );
 }
@@ -242,7 +246,7 @@ function ArrowUpIcon() {
 function MenuIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <path d="M3 12h18M3 6h18M3 18h18"/>
+      <path d="M3 12h18M3 6h18M3 18h18" />
     </svg>
   );
 }
@@ -250,7 +254,7 @@ function MenuIcon() {
 function XIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <path d="M18 6L6 18M6 6l12 12"/>
+      <path d="M18 6L6 18M6 6l12 12" />
     </svg>
   );
 }
@@ -264,6 +268,8 @@ export default function App() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const [previewProject, setPreviewProject] = useState<{ title: string; url: string } | null>(null);
+  const [iframeLoaded, setIframeLoaded] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -275,6 +281,19 @@ export default function App() {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setPreviewProject(null);
+    };
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  }, []);
+
+  const openPreview = (title: string, url: string) => {
+    setIframeLoaded(false);
+    setPreviewProject({ title, url });
+  };
 
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -333,7 +352,7 @@ export default function App() {
       <nav className="nav">
         <div className="nav-logo">JSR<span style={{ color: '#06b6d4' }}>.</span>dev</div>
         <div className="nav-links">
-          {[['projects','Projects'],['skills','Skills'],['services','Services'],['contact','Contact']].map(([id, label]) => (
+          {[['projects', 'Projects'], ['skills', 'Skills'], ['services', 'Services'], ['contact', 'Contact']].map(([id, label]) => (
             <button key={id} className={`nav-link ${activeSection === id ? 'active' : ''}`} onClick={() => scrollTo(id)}>{label}</button>
           ))}
         </div>
@@ -350,7 +369,7 @@ export default function App() {
       {/* MOBILE NAV */}
       {mobileNavOpen && (
         <div className="mobile-nav">
-          {[['projects','🗂️ Projects'],['skills','⚡ Skills'],['services','💼 Services'],['contact','📬 Contact']].map(([id, label]) => (
+          {[['projects', '🗂️ Projects'], ['skills', '⚡ Skills'], ['services', '💼 Services'], ['contact', '📬 Contact']].map(([id, label]) => (
             <button key={id} className="mobile-nav-link" onClick={() => scrollTo(id)}>{label}</button>
           ))}
           <a href="https://github.com/JSR2406" target="_blank" rel="noopener noreferrer" className="mobile-nav-link">
@@ -447,10 +466,10 @@ export default function App() {
             {([
               ['all', '🗂️ All', allProjects.length],
               ['featured', '⭐ Featured', featuredProjects.length],
-              ['ai-ml', '🤖 AI & ML', categories.find(c=>c.id==='ai-ml')!.projects.length],
-              ['web-apps', '🌐 Web Apps', categories.find(c=>c.id==='web-apps')!.projects.length],
-              ['creative-3d', '✨ Creative 3D', categories.find(c=>c.id==='creative-3d')!.projects.length],
-              ['hackathons', '🏆 Hackathons', categories.find(c=>c.id==='hackathons')!.projects.length],
+              ['ai-ml', '🤖 AI & ML', categories.find(c => c.id === 'ai-ml')!.projects.length],
+              ['web-apps', '🌐 Web Apps', categories.find(c => c.id === 'web-apps')!.projects.length],
+              ['creative-3d', '✨ Creative 3D', categories.find(c => c.id === 'creative-3d')!.projects.length],
+              ['hackathons', '🏆 Hackathons', categories.find(c => c.id === 'hackathons')!.projects.length],
             ] as [FilterType, string, number][]).map(([id, label, count]) => (
               <button
                 key={id}
@@ -507,21 +526,21 @@ export default function App() {
                             href={project.github}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="card-link"
-                            title="View on GitHub"
+                            className="card-link card-link-github"
+                            title="View Source on GitHub"
+                            aria-label={`View ${project.title} on GitHub`}
                           >
-                            <GitHubIcon />
+                            <GitHubIcon /> <span className="card-link-label">Code</span>
                           </a>
                           {project.live && (
-                            <a
-                              href={project.live}
-                              target="_blank"
-                              rel="noopener noreferrer"
+                            <button
                               className="card-link card-link-live"
-                              title="Live Demo"
+                              title="Preview Live Demo"
+                              aria-label={`Preview ${project.title}`}
+                              onClick={() => openPreview(project.title, project.live!)}
                             >
-                              <ExternalIcon />
-                            </a>
+                              <ExternalIcon /> <span className="card-link-label">Live</span>
+                            </button>
                           )}
                         </div>
                       </div>
@@ -536,7 +555,7 @@ export default function App() {
                         {project.tech.slice(0, 5).map(t => (
                           <span
                             key={t}
-                            className={`tech-tag ${t==='TypeScript'?'ts':t==='Python'?'py':t==='JavaScript'?'js':''}`}
+                            className={`tech-tag ${t === 'TypeScript' ? 'ts' : t === 'Python' ? 'py' : t === 'JavaScript' ? 'js' : ''}`}
                           >
                             {t}
                           </span>
@@ -592,21 +611,21 @@ export default function App() {
 
           {/* Tech Badges */}
           <div style={{ marginTop: 48, display: 'flex', flexWrap: 'wrap', gap: 10 }}>
-            {['React','Next.js','TypeScript','Python','FastAPI','LangChain','OpenAI API','Supabase',
-              'PostgreSQL','Node.js','Three.js','Streamlit','LightGBM','XGBoost','CatBoost',
-              'Prisma','WebRTC','Redis','Docker','Git'].map(tech => (
-              <span key={tech} style={{
-                padding: '6px 14px',
-                borderRadius: 8,
-                fontSize: '0.8rem',
-                fontWeight: 500,
-                fontFamily: 'JetBrains Mono, monospace',
-                background: 'var(--bg-card)',
-                border: '1px solid var(--border)',
-                color: 'var(--text-secondary)',
-                transition: 'all 0.2s',
-              }}>{tech}</span>
-            ))}
+            {['React', 'Next.js', 'TypeScript', 'Python', 'FastAPI', 'LangChain', 'OpenAI API', 'Supabase',
+              'PostgreSQL', 'Node.js', 'Three.js', 'Streamlit', 'LightGBM', 'XGBoost', 'CatBoost',
+              'Prisma', 'WebRTC', 'Redis', 'Docker', 'Git'].map(tech => (
+                <span key={tech} style={{
+                  padding: '6px 14px',
+                  borderRadius: 8,
+                  fontSize: '0.8rem',
+                  fontWeight: 500,
+                  fontFamily: 'JetBrains Mono, monospace',
+                  background: 'var(--bg-card)',
+                  border: '1px solid var(--border)',
+                  color: 'var(--text-secondary)',
+                  transition: 'all 0.2s',
+                }}>{tech}</span>
+              ))}
           </div>
         </section>
       </main>
@@ -657,9 +676,9 @@ export default function App() {
             <div className="section-label" style={{ marginBottom: 24 }}>What's Included</div>
             <div className="matrix-header">
               <div className="matrix-feature-col">Feature</div>
-              <div className="matrix-tier-col tier-starter">🚀 Basic</div>
-              <div className="matrix-tier-col tier-pro">⚡ Medium</div>
-              <div className="matrix-tier-col tier-enterprise">🏆 Full-Stack+AI</div>
+              <div className="matrix-tier-col tier-starter">🚀 Starter</div>
+              <div className="matrix-tier-col tier-pro">⚡ Pro</div>
+              <div className="matrix-tier-col tier-enterprise">🏆 Enterprise</div>
             </div>
             {FEATURE_MATRIX.map(group => (
               <div key={group.category} className="matrix-group">
@@ -695,43 +714,20 @@ export default function App() {
           <div className="milestones-wrap">
             <div className="milestone-item">
               <div className="milestone-num">50%</div>
-              <div className="milestone-label">Advance</div>
-              <div className="milestone-desc">Paid before project starts</div>
+              <div className="milestone-label">Upfront</div>
+              <div className="milestone-desc">Project kickoff &amp; design phase</div>
             </div>
             <div className="milestone-arrow">→</div>
             <div className="milestone-item">
               <div className="milestone-num">25%</div>
-              <div className="milestone-label">Mid-milestone</div>
-              <div className="milestone-desc">After design / first milestone approval</div>
+              <div className="milestone-label">Mid-delivery</div>
+              <div className="milestone-desc">Staging review &amp; revisions</div>
             </div>
             <div className="milestone-arrow">→</div>
             <div className="milestone-item">
               <div className="milestone-num">25%</div>
               <div className="milestone-label">Final handover</div>
-              <div className="milestone-desc">Before deployment & source code release</div>
-            </div>
-          </div>
-
-          {/* TERMS & CONDITIONS */}
-          <div style={{ marginTop: 48, background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: 16, padding: '32px 36px', maxWidth: 860, margin: '48px auto 0' }}>
-            <div className="section-label" style={{ marginBottom: 16 }}>Terms & Conditions</div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '12px 32px' }}>
-              {[
-                '📋 Scope changes after approval are charged separately',
-                '📁 Client must provide logo, content & references before dev starts',
-                '⏳ Delays in content submission may extend the timeline',
-                '🌐 Domain, hosting & API costs billed separately unless specified',
-                '🛡 Support period depends on selected package',
-                '⚡ Rush delivery available at extra cost',
-                '🔒 All business information stays strictly confidential',
-                '💳 Extra revisions beyond included rounds are chargeable',
-                '📦 Source code handed over only after full payment',
-                '📅 Quote validity: 30 days from date of issue',
-              ].map(term => (
-                <div key={term} style={{ display: 'flex', gap: 8, fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
-                  <span>{term}</span>
-                </div>
-              ))}
+              <div className="milestone-desc">Live deployment &amp; source code</div>
             </div>
           </div>
 
@@ -784,13 +780,13 @@ export default function App() {
             </a>
             <a href="mailto:janmejaysingh2406@gmail.com" className="contact-link">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7L13 13.5a2 2 0 01-2 0L2 7"/>
+                <rect x="2" y="4" width="20" height="16" rx="2" /><path d="M22 7L13 13.5a2 2 0 01-2 0L2 7" />
               </svg>
               Send Email
             </a>
             <a href="https://www.linkedin.com/in/janmejay-singh-rathore" target="_blank" rel="noopener noreferrer" className="contact-link">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/>
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" /><circle cx="4" cy="4" r="2" />
               </svg>
               LinkedIn
             </a>
@@ -814,6 +810,75 @@ export default function App() {
           <ArrowUpIcon />
         </button>
       )}
+
+      {/* LIVE PREVIEW MODAL */}
+      {previewProject && (
+        <div
+          className="preview-overlay"
+          onClick={(e) => { if (e.target === e.currentTarget) setPreviewProject(null); }}
+          role="dialog"
+          aria-modal="true"
+          aria-label={`Live preview of ${previewProject.title}`}
+        >
+          <div className="preview-modal-inner">
+            {/* Browser chrome header */}
+            <div className="preview-header">
+              <div className="preview-dots">
+                <div
+                  className="preview-dot red"
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => setPreviewProject(null)}
+                  title="Close"
+                />
+                <div className="preview-dot yellow" />
+                <div className="preview-dot green" />
+              </div>
+              <div className="preview-url-bar">
+                <span>https://</span>{previewProject.url.replace('https://', '')}
+              </div>
+              <div className="preview-actions">
+                <a
+                  href={previewProject.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="preview-btn preview-btn-open"
+                >
+                  ↗ Open in New Tab
+                </a>
+                <button
+                  className="preview-btn preview-btn-close"
+                  onClick={() => setPreviewProject(null)}
+                >
+                  ✕ Close
+                </button>
+              </div>
+            </div>
+
+            {/* iframe area */}
+            <div className="preview-iframe-wrap">
+              <div className={`preview-loading ${iframeLoaded ? 'hidden' : ''}`}>
+                <div className="preview-spinner" />
+                <span>Loading live preview…</span>
+              </div>
+              <iframe
+                key={previewProject.url}
+                src={previewProject.url}
+                className="preview-iframe"
+                title={`Live preview: ${previewProject.title}`}
+                onLoad={() => setIframeLoaded(true)}
+                sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
+              />
+            </div>
+
+            {/* Project name footer */}
+            <div className="preview-title-bar">
+              <span className="preview-proj-name">⚡ {previewProject.title}</span>
+              <span className="preview-proj-note">Press Esc or click outside to close</span>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
+
   );
 }
